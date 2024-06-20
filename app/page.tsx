@@ -1,23 +1,17 @@
-import { Button, Col, Container, Row } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import Login from "./login";
 import Logout from "./logout";
+import Profile from "./profile";
+
 
 export default function Home() {
   return (
-    <main>
-      <div>
-      <Container className="text-center my-5">
-            <Row>
-                <Col md={6}>
-                  <Login></Login>
-                </Col>
-                <Col md={6}>
-                  <Logout></Logout>
-                </Col>
-            </Row>
-        </Container>
-
-      </div>
-    </main>
+    <>
+      <header>
+        <Profile></Profile>  <Login></Login> <Logout></Logout>
+      </header>
+      <main>
+      </main>
+    </>
   );
 }

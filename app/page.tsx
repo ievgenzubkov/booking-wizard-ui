@@ -1,6 +1,8 @@
 'use client';
 
 import { useUser } from '@auth0/nextjs-auth0/client';
+import Profile from './profile';
+
 
 export default function Index() {
   const { user, error, isLoading } = useUser();
@@ -10,11 +12,13 @@ export default function Index() {
 
   if (user) {
     return (
-      <div>
-        Welcome {user.name}! <a href="/api/auth/logout">Logout</a>
+      <div className='ps-2'>
+        Welcome {user.name}!  
+        <a className="ps-2" href="/api/auth/logout">Logout</a>
+        <Profile name={user.name!} picture={user.picture!}></Profile> 
       </div>
     );
   }
 
-  return <a href="/api/auth/login">Login</a>;
+  return <a className="ps-2" href="/api/auth/login">Login</a>;
 }

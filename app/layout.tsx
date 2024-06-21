@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { UserProvider } from '@auth0/nextjs-auth0/client';
 import "./globals.css";
-import { Container, Nav, Navbar } from "react-bootstrap";
 
 const inter = Inter({ subsets: ["latin"] });
 

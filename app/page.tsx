@@ -1,7 +1,7 @@
 'use client';
 
 import { useUser } from '@auth0/nextjs-auth0/client';
-import Profile from './profile';
+import Profile from '../components/profile';
 
 
 export default function Index() {

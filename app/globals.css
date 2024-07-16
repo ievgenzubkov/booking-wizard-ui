@@ -1,2 +1,11 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+#meetingSDKElement {
+  height: 100%;
+  margin: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+iframe#webpack-dev-server-client-overlay{display:none!important}
